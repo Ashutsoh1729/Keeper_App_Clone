@@ -26,7 +26,7 @@ function App() {
 
 
     const localNotes = localStorage.getItem("notes");
-    let existingNotes: Note[] = [];
+    let existingNotes: any = [];
 
     if (localNotes) {
       existingNotes = JSON.parse(localNotes);
