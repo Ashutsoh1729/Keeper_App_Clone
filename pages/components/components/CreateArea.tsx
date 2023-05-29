@@ -37,7 +37,7 @@ function CreateArea(prop: { addNote: (arg0: { title: string; content: string; })
 
   return (
     <div className={`flex flex-col items-center mt-12`}>
-      <div className={`flex flex-col  border-[2px] rounded-lg shadow-md w-[40vw] my-4`}>
+      <div className={`flex flex-col  border-[2px] border-slate rounded-lg shadow-new w-[40vw] my-4`}>
         <form className="flex flex-col m-1">
           {isExpanded && (
             <input
