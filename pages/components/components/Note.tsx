@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDelete } from "react-icons/md"
 
-function Note(props) {
+function Note(props: { index: any; deleteItem: (arg0: any) => void; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; content: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; }) {
   function deleteItem() {
     let index = props.index;
     props.deleteItem(index);

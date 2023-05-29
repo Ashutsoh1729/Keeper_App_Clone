@@ -89,7 +89,7 @@ function App() {
       <Header />
       <CreateArea addNote={addtoNote} />
 
-      {notes.map((element, index) => {
+      {notes.map((element:any, index) => {
         return (
           <Note
             key={index}
